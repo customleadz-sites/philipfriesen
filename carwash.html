@@ -160,11 +160,24 @@ p{margin:0;}
   <section>
     <h2>What I think we should do</h2>
     <p class="section-sub">Before the numbers — here's the plan I'd run, based on everything below. One monthly price, everything handled.</p>
-    <div class="kpis">
-      <div class="kpi"><div class="label">Facebook ads</div><div class="value">$150<span style="font-size:16px;color:var(--muted)">/mo</span></div><div class="note">The video ad we talked about + the "under new management" push — this is where your customers are</div></div>
-      <div class="kpi"><div class="label">Google ads</div><div class="value">$50<span style="font-size:16px;color:var(--muted)">/mo</span></div><div class="note">Tight radius around Honey Grove, tied to your Business Profile</div></div>
-      <div class="kpi"><div class="label">My fee</div><div class="value">$200<span style="font-size:16px;color:var(--muted)">/mo</span></div><div class="note">I run both, write your video scripts and posts, and track results against revenue</div></div>
-      <div class="kpi"><div class="label">Total</div><div class="value">$400<span style="font-size:16px;color:var(--muted)">/mo</span></div><div class="note">Right at the budget you gave me — nothing hidden on top</div></div>
+    <style>
+    .pricebox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;}
+    .prow{display:flex;align-items:baseline;gap:12px;padding:10px 0;}
+    .pname{font-weight:700;font-size:16px;white-space:nowrap;}
+    .psub{display:block;font-weight:400;font-size:12.5px;color:var(--muted);white-space:normal;max-width:34ch;margin-top:2px;}
+    .pdots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px);min-width:30px;}
+    .pamt{font-family:"Schibsted Grotesk",sans-serif;font-weight:800;font-size:22px;font-variant-numeric:tabular-nums;white-space:nowrap;}
+    .pamt small{font-family:"Hanken Grotesk",sans-serif;font-weight:600;font-size:13px;color:var(--muted);}
+    .pline{border:none;border-top:2px solid var(--line);margin:12px 0 4px;}
+    .ptotal .pname{font-size:18px;}
+    .ptotal .pamt{font-size:30px;color:var(--accent);}
+    </style>
+    <div class="pricebox">
+      <div class="prow"><div class="pname">Facebook ads<span class="psub">the video ad we talked about + the “under new management” push</span></div><div class="pdots"></div><div class="pamt">$150<small>/mo</small></div></div>
+      <div class="prow"><div class="pname">Google ads<span class="psub">tight radius around Honey Grove, tied to your Business Profile</span></div><div class="pdots"></div><div class="pamt">$50<small>/mo</small></div></div>
+      <div class="prow"><div class="pname">My fee<span class="psub">I run both, write your video scripts and posts, and track results against revenue</span></div><div class="pdots"></div><div class="pamt">$200<small>/mo</small></div></div>
+      <hr class="pline">
+      <div class="prow ptotal"><div class="pname">Total</div><div class="pdots"></div><div class="pamt">$400<small>/mo</small></div></div>
     </div>
     <div class="card" style="margin-top:12px;font-size:14.5px;color:var(--ink2);">We start once the Buzz &amp; Buff sign is up, so every ad points at the new name. The research below is why the money splits this way: Facebook gets 3x more than Google because the whole region only has ≈290 Google searches a month — the people we need to reach are locals who never search.</div>
   </section>
