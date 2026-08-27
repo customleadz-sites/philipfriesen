@@ -113,11 +113,13 @@ table.kwt{width:100%;border-collapse:collapse;font-size:14px;}
 .topnav{background:var(--card);border-bottom:1px solid var(--line);padding:12px 22px;
   display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;position:sticky;top:0;z-index:5;}
 .topnav .brand{font-family:"Schibsted Grotesk",sans-serif;font-weight:800;font-size:15px;color:var(--ink);}
-.navlinks{display:flex;gap:4px 18px;flex-wrap:wrap;}
-.navlinks a{color:var(--ink2);text-decoration:none;font-size:14px;font-weight:600;}
-.navlinks a:hover{color:var(--ink);}
-.navlinks a.here{color:var(--accent);}
-.navlinks a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px;}
+.navlinks{display:flex;gap:8px;flex-wrap:wrap;}
+.navlinks a{color:var(--ink2);text-decoration:none;font-size:13.5px;font-weight:700;
+  border:1px solid var(--line);border-radius:999px;padding:7px 16px;background:transparent;
+  transition:background .12s ease,color .12s ease;}
+.navlinks a:hover{background:var(--track);color:var(--ink);}
+.navlinks a.here{background:var(--accent);color:var(--paper);border-color:var(--accent);}
+.navlinks a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
 </style>
 
 
@@ -127,10 +129,9 @@ table.kwt{width:100%;border-collapse:collapse;font-size:14px;}
 <nav class="topnav">
   <span class="brand">CustomLeadz</span>
   <div class="navlinks">
-    <a href="index.html">Overview</a>
+    <a  href="carwash.html">Car Wash</a>
     <a class="here" href="dirtmoving.html">Dirt Moving Ads</a>
     <a  href="website.html">Website</a>
-    <a  href="carwash.html">Car Wash</a>
   </div>
 </nav>
 
