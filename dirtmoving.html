@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚜</text></svg>">
+<title>Friesen Dirt Moving Keyword Report</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --paper:#FBF9F5; --card:#FFFFFF; --ink:#241B10; --ink2:#5A4C39; --muted:#8A7A64;
+  --line:#E7DFD2; --accent:#8A5311; --accent-deep:#6B3F0B; --accent-soft:#F4E9DA;
+  --good:#2E7D4F; --good-soft:#E3F0E8;
+  --bar:#8A5311; --track:#EEE7DB;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#171208; --card:#241C10; --ink:#F2EBE0; --ink2:#CBBBA2; --muted:#98876E;
+    --line:#3A2F1E; --accent:#DFA354; --accent-deep:#E8B872; --accent-soft:#3A2C15;
+    --good:#5BBD87; --good-soft:#16301F;
+    --bar:#DFA354; --track:#302617;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#171208; --card:#241C10; --ink:#F2EBE0; --ink2:#CBBBA2; --muted:#98876E;
+  --line:#3A2F1E; --accent:#DFA354; --accent-deep:#E8B872; --accent-soft:#3A2C15;
+  --good:#5BBD87; --good-soft:#16301F;
+  --bar:#DFA354; --track:#302617;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Hanken Grotesk",-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.55;}
+.wrap{max-width:860px;margin:0 auto;padding:40px 22px 56px;display:flex;flex-direction:column;gap:34px;}
+h1,h2{font-family:"Schibsted Grotesk","Hanken Grotesk",sans-serif;text-wrap:balance;margin:0;}
+h1{font-size:clamp(28px,5vw,40px);font-weight:800;letter-spacing:-.01em;}
+h2{font-size:21px;font-weight:700;margin-bottom:4px;}
+p{margin:0;}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
+.former{display:inline-block;margin-top:6px;font-size:14px;color:var(--muted);}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:13.5px;color:var(--muted);}
+.meta b{color:var(--ink2);font-weight:600;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;}
+.section-sub{color:var(--ink2);font-size:14.5px;margin:2px 0 14px;max-width:68ch;}
+
+.explain{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
+.explain .card{padding:14px 16px;}
+.explain .t{font-weight:700;font-size:13.5px;margin-bottom:3px;}
+.explain .d{font-size:13.5px;color:var(--ink2);}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;}
+.kpi .label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+.kpi .value{font-family:"Schibsted Grotesk",sans-serif;font-size:30px;font-weight:800;margin:4px 0 2px;font-variant-numeric:tabular-nums;}
+.kpi .note{font-size:13px;color:var(--ink2);}
+
+.brow{display:grid;grid-template-columns:190px 1fr 84px;align-items:center;gap:12px;padding:9px 0;}
+.brow + .brow{border-top:1px solid var(--line);}
+.brow .name{font-size:14.5px;font-weight:600;}
+.brow .kwn{display:block;font-size:12px;color:var(--muted);font-weight:400;}
+.btrack{height:14px;background:var(--track);border-radius:0 4px 4px 0;overflow:hidden;}
+.bfill{height:100%;background:var(--bar);border-radius:0 4px 4px 0;}
+.bval{font-variant-numeric:tabular-nums;font-size:14px;font-weight:700;text-align:right;}
+.bval small{display:block;font-weight:400;color:var(--muted);font-size:11.5px;}
+
+table.kwt{width:100%;border-collapse:collapse;font-size:14px;}
+.kwt th{font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);}
+.kwt th:nth-child(n+2),.kwt td:nth-child(n+2){text-align:right;}
+.kwt td{padding:9px 10px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums;}
+.kwt tr:last-child td{border-bottom:none;}
+.kwt .kw{font-weight:600;}
+.pill{display:inline-block;font-size:11.5px;font-weight:700;border-radius:999px;padding:2px 10px;background:var(--accent-soft);color:var(--ink2);}
+.tailnote{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;color:var(--ink2);}
+
+.scorecard{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;}
+.ring{width:140px;height:140px;position:relative;}
+.ring svg{transform:rotate(-90deg);}
+.ring .num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.ring .num b{font-family:"Schibsted Grotesk",sans-serif;font-size:36px;font-weight:800;line-height:1;}
+.ring .num span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700;}
+.verdict{font-weight:800;color:var(--good);font-size:15px;}
+.factors{display:flex;flex-direction:column;gap:10px;margin-top:6px;}
+.frow{display:grid;grid-template-columns:150px 1fr 52px;gap:10px;align-items:center;font-size:13.5px;}
+.frow .fn{font-weight:600;}
+.ftrack{height:8px;background:var(--track);border-radius:4px;overflow:hidden;}
+.ffill{height:100%;background:var(--bar);border-radius:4px;}
+.frow .fv{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink2);font-weight:600;}
+.fwhy{grid-column:1 / -1;font-size:12.5px;color:var(--muted);margin-top:-4px;}
+.tiers{width:100%;border-collapse:collapse;margin-top:18px;font-size:14px;}
+.tiers th{font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);text-align:right;padding:7px 10px;border-bottom:1px solid var(--line);}
+.tiers th:first-child,.tiers td:first-child{text-align:left;}
+.tiers td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums;}
+.tiers tr:last-child td{border-bottom:none;}
+.assume{font-size:12.5px;color:var(--muted);margin-top:12px;line-height:1.6;}
+
+.takes{display:flex;flex-direction:column;gap:12px;counter-reset:tk;}
+.take{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 18px 15px 54px;position:relative;font-size:14.5px;color:var(--ink2);}
+.take b{color:var(--ink);}
+.take::before{counter-increment:tk;content:counter(tk);position:absolute;left:16px;top:14px;width:26px;height:26px;border-radius:50%;
+  background:var(--accent-soft);color:var(--accent);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;
+  font-family:"Schibsted Grotesk",sans-serif;}
+.foot{font-size:12.5px;color:var(--muted);line-height:1.65;border-top:1px solid var(--line);padding-top:16px;}
+.foot b{color:var(--ink2);}
+.tablewrap{overflow-x:auto;}
+@media (max-width:560px){
+  .brow{grid-template-columns:1fr;gap:4px;}
+  .bval{text-align:left;}
+  .scorecard{grid-template-columns:1fr;}
+  .frow{grid-template-columns:110px 1fr 48px;}
+}
+@media (prefers-reduced-motion: reduce){ *{transition:none!important;animation:none!important;} }
+
+.topnav{background:var(--card);border-bottom:1px solid var(--line);padding:12px 22px;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;position:sticky;top:0;z-index:5;}
+.topnav .brand{font-family:"Schibsted Grotesk",sans-serif;font-weight:800;font-size:15px;color:var(--ink);}
+.navlinks{display:flex;gap:4px 18px;flex-wrap:wrap;}
+.navlinks a{color:var(--ink2);text-decoration:none;font-size:14px;font-weight:600;}
+.navlinks a:hover{color:var(--ink);}
+.navlinks a.here{color:var(--accent);}
+.navlinks a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px;}
+</style>
+
+
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="brand">CustomLeadz</span>
+  <div class="navlinks">
+    <a href="index.html">Overview</a>
+    <a class="here" href="dirtmoving.html">Dirt Moving Ads</a>
+    <a  href="website.html">Website</a>
+    <a  href="carwash.html">Car Wash</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Google Ads · Keyword Research</div>
+    <h1>Dirt Moving &amp; Excavation</h1>
+    <span class="former">The Friesen family dirt-moving business · Paris, Texas</span>
+    <div class="meta">
+      <span><b>Search area:</b> 30 counties within a 2-hour drive of Paris</span>
+      <span><b>Data:</b> Google Keyword Planner, Aug 2025 – Jul 2026</span>
+      <span><b>Prepared by:</b> CustomLeadz</span>
+    </div>
+  </header>
+
+  <section class="explain">
+    <div class="card"><div class="t">Searches per month</div><div class="d">How many times a month people in your service area type a phrase into Google. Every number here has been corrected downward to be honest (see the footnote).</div></div>
+    <div class="card"><div class="t">Cost per click</div><div class="d">What advertisers pay when someone clicks their ad. Google reports a low–high range for showing at the top of the page.</div></div>
+    <div class="card"><div class="t">Why our totals look small</div><div class="d">We removed competitor names, equipment searches, and price-shopping phrases, then merged duplicates Google counts twice. Small and true beats big and wrong.</div></div>
+  </section>
+
+  <section>
+    <h2>The market at a glance</h2>
+    <p class="section-sub">We studied 437 excavation and dirt-work phrases across all 30 counties and kept only searches from people looking to hire.</p>
+    <div class="kpis">
+      <div class="kpi"><div class="label">Real searches / month</div><div class="value">≈1,380</div><div class="note">Across the 2-hour service area, after corrections</div></div>
+      <div class="kpi"><div class="label">Cost per click</div><div class="value">$3.50–$16</div><div class="note">Top-of-page bid range on the biggest phrases</div></div>
+      <div class="kpi"><div class="label">Est. cost per call</div><div class="value">≈$80</div><div class="note">At a typical 12% click-to-call rate</div></div>
+      <div class="kpi"><div class="label">Est. cost per job</div><div class="value">≈$268</div><div class="note">Against jobs worth $2,000–$10,000</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Where the searches go</h2>
+    <p class="section-sub">Every phrase sorted into six buckets. Bar length is real monthly searches after corrections — each bucket can become its own campaign with its own landing page.</p>
+    <div class="card">
+      <div class="brow"><div class="name">Excavation companies<span class="kwn">"excavation companies near me" and friends</span></div><div class="btrack"><div class="bfill" style="width:100%"></div></div><div class="bval">913<small>/month</small></div></div>
+      <div class="brow"><div class="name">Dirt work &amp; earthmoving<span class="kwn">"dirt works", "dirt moving company"</span></div><div class="btrack"><div class="bfill" style="width:20.7%"></div></div><div class="bval">189<small>/month</small></div></div>
+      <div class="brow"><div class="name">Grading, land &amp; site prep<span class="kwn">pads, driveways, clearing, drainage</span></div><div class="btrack"><div class="bfill" style="width:12.4%"></div></div><div class="bval">113<small>/month</small></div></div>
+      <div class="brow"><div class="name">Trenching &amp; utilities<span class="kwn">trenching services &amp; contractors</span></div><div class="btrack"><div class="bfill" style="width:8.5%"></div></div><div class="bval">78<small>/month</small></div></div>
+      <div class="brow"><div class="name">Pools &amp; basements<span class="kwn">dig-outs for pools and foundations</span></div><div class="btrack"><div class="bfill" style="width:6.5%"></div></div><div class="bval">59<small>/month</small></div></div>
+      <div class="brow"><div class="name">Ponds<span class="kwn">"pond digging near me"</span></div><div class="btrack"><div class="bfill" style="width:3.4%"></div></div><div class="bval">31<small>/month</small></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The phrases that matter most</h2>
+    <p class="section-sub">The searches carrying most of the demand, with what a top-of-page click costs on each.</p>
+    <div class="card">
+      <div class="tablewrap">
+      <table class="kwt">
+        <tr><th>Keyword</th><th>Searches / mo</th><th>Competition</th><th>Cost per click</th></tr>
+        <tr><td class="kw">excavation</td><td>385</td><td><span class="pill">Low</span></td><td>$2.42 – $15.93</td></tr>
+        <tr><td class="kw">excavation companies near me</td><td>259</td><td><span class="pill">Medium</span></td><td>$4.62 – $18.87</td></tr>
+        <tr><td class="kw">excavation contractors near me</td><td>175</td><td><span class="pill">Low</span></td><td>$3.72 – $13.16</td></tr>
+        <tr><td class="kw">dirt works</td><td>105</td><td><span class="pill">Low</span></td><td>$3.96 – $12.79</td></tr>
+      </table>
+      </div>
+      <div class="tailnote">Behind these sits a long tail of 190 phrase groups at 3–9 searches a month each — "pond digging near me", "trenching services", "foundation excavation contractors", "dirt moving company". Individually tiny, together roughly a third of the market, and they're the most specific, highest-intent searches on the list.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Potential for ad success</h2>
+    <p class="section-sub">A transparent score — four factors, each explained, so you can see exactly why the number is what it is.</p>
+    <div class="card">
+      <div class="scorecard">
+        <div class="ring">
+          <svg width="140" height="140" viewBox="0 0 140 140" role="img" aria-label="Ad success score 81 out of 100">
+            <circle cx="70" cy="70" r="60" fill="none" stroke="var(--track)" stroke-width="12"/>
+            <circle cx="70" cy="70" r="60" fill="none" stroke="var(--good)" stroke-width="12" stroke-linecap="round"
+              stroke-dasharray="305.4 377" />
+          </svg>
+          <div class="num"><b>81</b><span>of 100</span></div>
+        </div>
+        <div>
+          <div class="verdict">✓ Strong opportunity — the numbers support running ads</div>
+          <div class="factors">
+            <div class="frow"><span class="fn">Search demand</span><div class="ftrack"><div class="ffill" style="width:67%"></div></div><span class="fv">20/30</span>
+              <span class="fwhy">≈1,380 real searches a month across the service area — a solid, steady market.</span></div>
+            <div class="frow"><span class="fn">Buyer intent</span><div class="ftrack"><div class="ffill" style="width:76%"></div></div><span class="fv">19/25</span>
+              <span class="fwhy">53% of searches name a company, contractor, or "near me" — people looking to hire, not browse.</span></div>
+            <div class="frow"><span class="fn">Cost vs. job value</span><div class="ftrack"><div class="ffill" style="width:100%"></div></div><span class="fv">25/25</span>
+              <span class="fwhy">≈$268 in ads to win a job worth $2,000–$10,000 — a single job pays for months of advertising.</span></div>
+            <div class="frow"><span class="fn">Competition</span><div class="ftrack"><div class="ffill" style="width:84%"></div></div><span class="fv">17/20</span>
+              <span class="fwhy">Most big phrases are rated Low-competition — far fewer bidders out here than in the metros.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <table class="tiers">
+        <tr><th>Monthly ad spend</th><th>Clicks</th><th>Est. calls</th><th>Est. jobs</th><th>Est. revenue</th></tr>
+        <tr><td><b>$500</b></td><td>≈52</td><td>≈6</td><td>≈2</td><td>≈$9,300</td></tr>
+        <tr><td><b>$1,000</b></td><td>≈104</td><td>≈12</td><td>≈4</td><td>≈$18,600</td></tr>
+        <tr><td><b>$2,000</b></td><td>≈207</td><td>≈25</td><td>≈7</td><td>≈$37,300</td></tr>
+      </table>
+      <p class="assume">Assumptions: $9.65 average cost per click (the volume-weighted middle of Google's own bid ranges above), 12% of clickers call, 30% of calls become jobs, $5,000 average job. Revenue is an estimate, not a promise — month one runs worse than month three while Google's targeting learns who converts. Ad spend goes to Google and is separate from management.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What this means</h2>
+    <div class="takes">
+      <div class="take"><b>The math that matters: one job pays for everything.</b> A click costs about $9.65, a call about $80, a won job about $268 — against jobs worth $2,000–$10,000. Even the minimum budget only needs one job a month to come out well ahead.</div>
+      <div class="take"><b>That ≈$80-per-call figure isn't a guess.</b> It's what an actual dirt-moving client of ours pays per call today, and this region's own bid data lands in the same place. The estimate and the real-world result agree.</div>
+      <div class="take"><b>Competition out here is on your side.</b> The biggest phrases are rated Low-competition — bid data even thins out because so few companies advertise. The exception is the Dallas side of the radius, where clicks get expensive; we'd start targeting the rural counties and only expand toward the metro if results support it.</div>
+      <div class="take"><b>The buckets above become the campaign structure.</b> Each service — general excavation, dirt work, grading and pads, trenching, ponds — gets its own ad group and its own landing page (landing pages are included with management). Specific ads beat generic ones on both price and results.</div>
+      <div class="take"><b>Expect the ramp, not instant results.</b> Google's algorithm needs conversion data to find the right people. Month one may run near $100–125 per call; by month three it should be at or under the $80 mark. The budget you choose sets how fast it learns.</div>
+    </div>
+  </section>
+
+  
+  <section>
+    <h2>What it costs</h2>
+    <p class="section-sub">Two parts, both month to month: management (what you pay me) and ad spend (paid straight to Google — I never touch it).</p>
+    <div class="kpis">
+      <div class="kpi"><div class="label">Management</div><div class="value">$450<span style="font-size:16px;color:var(--muted)">/mo</span></div><div class="note">Everything in the list below — my flat fee</div></div>
+      <div class="kpi"><div class="label">Ad spend</div><div class="value">$500+<span style="font-size:16px;color:var(--muted)">/mo</span></div><div class="note">Paid directly to Google. The minimum worth starting at — scale it up when results support it</div></div>
+      <div class="kpi"><div class="label">First month total</div><div class="value">$950</div><div class="note">$450 management + $500 ad spend</div></div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px;font-size:14.5px;color:var(--ink2);">
+        <li style="padding-left:26px;position:relative;"><span style="position:absolute;left:0;color:var(--good);font-weight:800;">✓</span>Full campaign build from this research — the six service buckets above become the ad groups</li>
+        <li style="padding-left:26px;position:relative;"><span style="position:absolute;left:0;color:var(--good);font-weight:800;">✓</span>4–5 landing pages, one per service — included, not extra</li>
+        <li style="padding-left:26px;position:relative;"><span style="position:absolute;left:0;color:var(--good);font-weight:800;">✓</span>Call tracking so we know exactly which ads make the phone ring</li>
+        <li style="padding-left:26px;position:relative;"><span style="position:absolute;left:0;color:var(--good);font-weight:800;">✓</span>Ongoing optimization — testing headlines, tightening targeting, cutting what doesn't work</li>
+        <li style="padding-left:26px;position:relative;"><span style="position:absolute;left:0;color:var(--good);font-weight:800;">✓</span>Plain-English reporting, so you and your dad always know what you're getting for the money</li>
+      </ul>
+    </div>
+  </section>
+
+<p class="foot"><b>How we corrected the numbers.</b> The service area (30 counties within two hours of Paris) exceeds what Google reports at once, so demand was pulled in three ten-county batches and combined — no county counted twice. Then four honesty passes: <b>(1)</b> we removed 155 phrases that don't apply — competitor company names, equipment and machinery searches (excavators, skid steers), engineering jargon, and price-shopping queries; <b>(2)</b> phrases Google reports at "10 searches/month" are rounded up — we count each as 3; <b>(3)</b> Google counts the same search under many similar phrases, so duplicate variants were merged (e.g. "excavation contractors near me" was being counted five ways); <b>(4)</b> a further 30% discount on the total, because Google's own documentation says volumes overlap and independent studies find Keyword Planner overestimates. No number here double-counts, and nothing is inflated to make ads look better than they are.</p>
+
+</div>
+
+</body>
+</html>

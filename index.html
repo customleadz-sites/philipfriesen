@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Friesen Plan</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚜</text></svg>">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --paper:#F6F7F7; --card:#FFFFFF; --ink:#182229; --ink2:#46545E; --muted:#75838C;
+  --line:#DDE3E6; --accent:#33607C; --accent-soft:#E7EEF2;
+  --dirt:#8A5311; --dirt-soft:#F4E9DA; --wash:#1593B8; --wash-soft:#E1F1F7;
+  --web:#33607C; --web-soft:#E7EEF2;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#10181D; --card:#1A252C; --ink:#EAF0F3; --ink2:#B7C4CC; --muted:#83929B;
+    --line:#2B3941; --accent:#7FB0CC; --accent-soft:#20323D;
+    --dirt:#DFA354; --dirt-soft:#3A2C15; --wash:#4FB3D4; --wash-soft:#153341;
+    --web:#7FB0CC; --web-soft:#20323D;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#10181D; --card:#1A252C; --ink:#EAF0F3; --ink2:#B7C4CC; --muted:#83929B;
+  --line:#2B3941; --accent:#7FB0CC; --accent-soft:#20323D;
+  --dirt:#DFA354; --dirt-soft:#3A2C15; --wash:#4FB3D4; --wash-soft:#153341;
+  --web:#7FB0CC; --web-soft:#20323D;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Hanken Grotesk",-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.55;}
+.topnav{background:var(--card);border-bottom:1px solid var(--line);padding:12px 22px;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;position:sticky;top:0;z-index:5;}
+.topnav .brand{font-family:"Schibsted Grotesk",sans-serif;font-weight:800;font-size:15px;}
+.navlinks{display:flex;gap:4px 18px;flex-wrap:wrap;}
+.navlinks a{color:var(--ink2);text-decoration:none;font-size:14px;font-weight:600;}
+.navlinks a:hover{color:var(--ink);}
+.navlinks a.here{color:var(--accent);}
+.navlinks a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px;}
+.wrap{max-width:860px;margin:0 auto;padding:48px 22px 56px;display:flex;flex-direction:column;gap:34px;}
+h1,h2{font-family:"Schibsted Grotesk",sans-serif;text-wrap:balance;margin:0;}
+h1{font-size:clamp(30px,5.4vw,44px);font-weight:800;letter-spacing:-.01em;}
+p{margin:0;}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
+.lede{color:var(--ink2);max-width:60ch;margin-top:14px;font-size:17px;}
+.cards{display:flex;flex-direction:column;gap:16px;}
+.pagecard{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);
+  border-radius:16px;padding:22px 24px;transition:transform .15s ease, box-shadow .15s ease;position:relative;overflow:hidden;}
+.pagecard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--edge);}
+.pagecard:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08);}
+.pagecard .tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  border-radius:999px;padding:3px 12px;background:var(--tagbg);color:var(--edge);margin-bottom:10px;}
+.pagecard h2{font-size:22px;font-weight:800;margin-bottom:6px;}
+.pagecard .desc{color:var(--ink2);font-size:14.5px;max-width:62ch;}
+.pagecard .go{display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--edge);}
+.stats{display:flex;gap:8px 22px;flex-wrap:wrap;margin-top:12px;}
+.stats span{font-size:13px;color:var(--muted);}
+.stats b{color:var(--ink);font-variant-numeric:tabular-nums;font-weight:700;}
+footer{border-top:1px solid var(--line);padding-top:18px;font-size:13.5px;color:var(--muted);}
+@media (prefers-reduced-motion: reduce){ *{transition:none!important;animation:none!important;} }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="brand">CustomLeadz</span>
+  <div class="navlinks">
+    <a class="here" href="index.html">Overview</a>
+    <a href="dirtmoving.html">Dirt Moving Ads</a>
+    <a href="website.html">Website</a>
+    <a href="carwash.html">Car Wash</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Prepared for Philip Friesen &amp; family</div>
+    <h1>Philip — here's everything we talked about.</h1>
+    <p class="lede">Three pages, from our call on August 26: the Google Ads research for the dirt-moving business, what a website would look like and cost, and the plan for the car wash. Share this link with your dad — it reads fine on a phone.</p>
+  </header>
+
+  <div class="cards">
+
+    <a class="pagecard" href="dirtmoving.html" style="--edge:var(--dirt);--tagbg:var(--dirt-soft);">
+      <span class="tag">Page 1 · Google Ads</span>
+      <h2>Dirt Moving &amp; Excavation</h2>
+      <p class="desc">The full keyword research for your 2-hour service area — how many people are searching, what a call and a job cost to win, and what management costs.</p>
+      <div class="stats">
+        <span><b>≈1,380</b> real searches/mo</span>
+        <span><b>≈$80</b> per call</span>
+        <span><b>≈$268</b> to win a $2,000–$10,000 job</span>
+      </div>
+      <span class="go">See the research →</span>
+    </a>
+
+    <a class="pagecard" href="website.html" style="--edge:var(--web);--tagbg:var(--web-soft);">
+      <span class="tag">Page 2 · Website</span>
+      <h2>A Website for the Dirt Business</h2>
+      <p class="desc">Right now the business runs on word of mouth with nothing to point people to. Here's what I'd build, two live examples you can click around, and the price.</p>
+      <div class="stats">
+        <span><b>$1,200</b> one-time</span>
+        <span><b>2</b> live examples to look at</span>
+      </div>
+      <span class="go">See examples &amp; pricing →</span>
+    </a>
+
+    <a class="pagecard" href="carwash.html" style="--edge:var(--wash);--tagbg:var(--wash-soft);">
+      <span class="tag">Page 3 · Car Wash</span>
+      <h2>Buzz &amp; Buff Car Wash</h2>
+      <p class="desc">The honest numbers on Google demand around Honey Grove, and where I'd actually put the advertising effort — including the video idea we talked about.</p>
+      <div class="stats">
+        <span><b>≈290</b> searches/mo in the region</span>
+        <span><b>Facebook first</b>, small Google second</span>
+      </div>
+      <span class="go">See the plan →</span>
+    </a>
+
+  </div>
+
+  <footer>Prepared by Kennedy Holdeman · CustomLeadz · August 2026. Questions? Call or text me anytime.</footer>
+
+</div>
+</body>
+</html>

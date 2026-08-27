@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚜</text></svg>">
+<title>Buzz &amp; Buff Car Wash Plan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --paper:#F5FAFC; --card:#FFFFFF; --ink:#10222B; --ink2:#3E5763; --muted:#6B8391;
+  --line:#D8E6EC; --accent:#1593B8; --accent-deep:#0B6B8A; --accent-soft:#E1F1F7;
+  --amber:#B45309; --amber-soft:#FBF0E2; --good:#2E7D4F;
+  --bar:#1593B8; --track:#E4EEF3;
+}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0C181E; --card:#12232C; --ink:#E8F2F6; --ink2:#B4C9D2; --muted:#7E97A2;
+    --line:#223944; --accent:#4FB3D4; --accent-deep:#7FC8DD; --accent-soft:#153341;
+    --amber:#F5A524; --amber-soft:#2E2410; --good:#5BBD87;
+    --bar:#4FB3D4; --track:#1B303A;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0C181E; --card:#12232C; --ink:#E8F2F6; --ink2:#B4C9D2; --muted:#7E97A2;
+  --line:#223944; --accent:#4FB3D4; --accent-deep:#7FC8DD; --accent-soft:#153341;
+  --amber:#F5A524; --amber-soft:#2E2410; --good:#5BBD87;
+  --bar:#4FB3D4; --track:#1B303A;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Hanken Grotesk",-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.55;}
+.wrap{max-width:860px;margin:0 auto;padding:40px 22px 56px;display:flex;flex-direction:column;gap:34px;}
+h1,h2{font-family:"Schibsted Grotesk","Hanken Grotesk",sans-serif;text-wrap:balance;margin:0;}
+h1{font-size:clamp(28px,5vw,40px);font-weight:800;letter-spacing:-.01em;}
+h2{font-size:21px;font-weight:700;margin-bottom:4px;}
+p{margin:0;}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
+.sub{color:var(--ink2);max-width:62ch;}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:13.5px;color:var(--muted);}
+.meta b{color:var(--ink2);font-weight:600;}
+.former{display:inline-block;margin-top:6px;font-size:14px;color:var(--muted);}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;}
+.section-sub{color:var(--ink2);font-size:14.5px;margin:2px 0 14px;max-width:68ch;}
+
+/* explainer strip */
+.explain{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
+.explain .card{padding:14px 16px;}
+.explain .t{font-weight:700;font-size:13.5px;margin-bottom:3px;}
+.explain .d{font-size:13.5px;color:var(--ink2);}
+
+/* KPIs */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;}
+.kpi .label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+.kpi .value{font-family:"Schibsted Grotesk",sans-serif;font-size:30px;font-weight:800;margin:4px 0 2px;font-variant-numeric:tabular-nums;}
+.kpi .note{font-size:13px;color:var(--ink2);}
+
+/* theme bars */
+.brow{display:grid;grid-template-columns:170px 1fr 84px;align-items:center;gap:12px;padding:9px 0;}
+.brow + .brow{border-top:1px solid var(--line);}
+.brow .name{font-size:14.5px;font-weight:600;}
+.brow .kwn{display:block;font-size:12px;color:var(--muted);font-weight:400;}
+.btrack{height:14px;background:var(--track);border-radius:0 4px 4px 0;overflow:hidden;}
+.bfill{height:100%;background:var(--bar);border-radius:0 4px 4px 0;}
+.bval{font-variant-numeric:tabular-nums;font-size:14px;font-weight:700;text-align:right;}
+.bval small{display:block;font-weight:400;color:var(--muted);font-size:11.5px;}
+
+/* keyword family */
+.bigkw{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
+.bigkw .kw{font-family:"Schibsted Grotesk",sans-serif;font-size:24px;font-weight:800;}
+.bigkw .v{color:var(--accent);font-weight:800;font-size:18px;font-variant-numeric:tabular-nums;}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+.chip{font-size:13px;background:var(--accent-soft);color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:4px 12px;}
+.tailnote{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;color:var(--ink2);}
+
+/* ad success */
+.scorecard{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;}
+.ring{width:140px;height:140px;position:relative;}
+.ring svg{transform:rotate(-90deg);}
+.ring .num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.ring .num b{font-family:"Schibsted Grotesk",sans-serif;font-size:36px;font-weight:800;line-height:1;}
+.ring .num span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700;}
+.verdict{font-weight:800;color:var(--amber);font-size:15px;}
+.factors{display:flex;flex-direction:column;gap:10px;margin-top:6px;}
+.frow{display:grid;grid-template-columns:150px 1fr 52px;gap:10px;align-items:center;font-size:13.5px;}
+.frow .fn{font-weight:600;}
+.ftrack{height:8px;background:var(--track);border-radius:4px;overflow:hidden;}
+.ffill{height:100%;background:var(--bar);border-radius:4px;}
+.frow .fv{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink2);font-weight:600;}
+.fwhy{grid-column:1 / -1;font-size:12.5px;color:var(--muted);margin-top:-4px;}
+.tiers{width:100%;border-collapse:collapse;margin-top:18px;font-size:14px;}
+.tiers th{font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);text-align:right;padding:7px 10px;border-bottom:1px solid var(--line);}
+.tiers th:first-child,.tiers td:first-child{text-align:left;}
+.tiers td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums;}
+.tiers tr:last-child td{border-bottom:none;}
+.tiers .cap{color:var(--amber);font-weight:700;font-size:12px;}
+.assume{font-size:12.5px;color:var(--muted);margin-top:12px;line-height:1.6;}
+
+/* takeaways */
+.takes{display:flex;flex-direction:column;gap:12px;counter-reset:tk;}
+.take{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 18px 15px 54px;position:relative;font-size:14.5px;color:var(--ink2);}
+.take b{color:var(--ink);}
+.take::before{counter-increment:tk;content:counter(tk);position:absolute;left:16px;top:14px;width:26px;height:26px;border-radius:50%;
+  background:var(--accent-soft);color:var(--accent);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;
+  font-family:"Schibsted Grotesk",sans-serif;}
+.foot{font-size:12.5px;color:var(--muted);line-height:1.65;border-top:1px solid var(--line);padding-top:16px;}
+.foot b{color:var(--ink2);}
+@media (max-width:560px){
+  .brow{grid-template-columns:1fr;gap:4px;}
+  .bval{text-align:left;}
+  .scorecard{grid-template-columns:1fr;}
+  .frow{grid-template-columns:110px 1fr 48px;}
+}
+@media (prefers-reduced-motion: reduce){ *{transition:none!important;animation:none!important;} }
+
+.topnav{background:var(--card);border-bottom:1px solid var(--line);padding:12px 22px;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;position:sticky;top:0;z-index:5;}
+.topnav .brand{font-family:"Schibsted Grotesk",sans-serif;font-weight:800;font-size:15px;color:var(--ink);}
+.navlinks{display:flex;gap:4px 18px;flex-wrap:wrap;}
+.navlinks a{color:var(--ink2);text-decoration:none;font-size:14px;font-weight:600;}
+.navlinks a:hover{color:var(--ink);}
+.navlinks a.here{color:var(--accent);}
+.navlinks a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px;}
+</style>
+
+
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="brand">CustomLeadz</span>
+  <div class="navlinks">
+    <a href="index.html">Overview</a>
+    <a  href="dirtmoving.html">Dirt Moving Ads</a>
+    <a  href="website.html">Website</a>
+    <a class="here" href="carwash.html">Car Wash</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Google Ads · Keyword Research</div>
+    <h1>Buzz &amp; Buff Car Wash</h1>
+    <span class="former">formerly Main Street Car Wash · Honey Grove, Texas</span>
+    <div class="meta">
+      <span><b>Search area:</b> Paris, TX region</span>
+      <span><b>Data:</b> Google Keyword Planner, Aug 2025 – Jul 2026</span>
+      <span><b>Prepared by:</b> CustomLeadz</span>
+    </div>
+  </header>
+
+  <section class="explain">
+    <div class="card"><div class="t">Searches per month</div><div class="d">How many times a month people in the area type a phrase into Google. Google rounds tiny numbers up, so we corrected them down (details in the footnote).</div></div>
+    <div class="card"><div class="t">Competition</div><div class="d">How many businesses pay to show ads on a phrase. Low competition means cheap clicks — and here it's about as low as it gets.</div></div>
+    <div class="card"><div class="t">Why our totals look small</div><div class="d">We removed keywords that don't fit a self-serve wash, merged duplicates Google counts twice, and kept only honest numbers. Small and true beats big and wrong.</div></div>
+  </section>
+
+  <section>
+    <h2>The market at a glance</h2>
+    <p class="section-sub">We studied 1,014 car-wash phrases Google suggested for the region and kept only what fits a drive-in, wash-it-yourself car wash.</p>
+    <div class="kpis">
+      <div class="kpi"><div class="label">Real searches / month</div><div class="value">≈290</div><div class="note">Across the whole Paris region, after corrections</div></div>
+      <div class="kpi"><div class="label">Ready-to-visit intent</div><div class="value">85%</div><div class="note">"Near me"-style searches from people wanting a wash now</div></div>
+      <div class="kpi"><div class="label">Advertisers bidding</div><div class="value">~0</div><div class="note">Only 1 of 1,014 phrases even had bid data</div></div>
+      <div class="kpi"><div class="label">Useful ad budget</div><div class="value">~$116<span style="font-size:16px;color:var(--muted)">/mo</span></div><div class="note">Spending past this buys clicks that don't exist</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Where the searches go</h2>
+    <p class="section-sub">Every phrase sorted into five buckets. Bar length is real monthly searches after corrections.</p>
+    <div class="card">
+      <div class="brow"><div class="name">Finding a car wash<span class="kwn">"car wash near me" and friends</span></div><div class="btrack"><div class="bfill" style="width:100%"></div></div><div class="bval">230<small>/month</small></div></div>
+      <div class="brow"><div class="name">Self-serve &amp; manual<span class="kwn">people looking for exactly his wash</span></div><div class="btrack"><div class="bfill" style="width:13.5%"></div></div><div class="bval">31<small>/month</small></div></div>
+      <div class="brow"><div class="name">Wash + vacuum<span class="kwn">bays with vacuums &amp; shampooers</span></div><div class="btrack"><div class="bfill" style="width:6.5%"></div></div><div class="bval">15<small>/month</small></div></div>
+      <div class="brow"><div class="name">Trucks &amp; trailers<span class="kwn">bigger rigs that need a bay</span></div><div class="btrack"><div class="bfill" style="width:3.5%"></div></div><div class="bval">8<small>/month</small></div></div>
+      <div class="brow"><div class="name">Coin-operated<span class="kwn">quarters-and-wand searchers</span></div><div class="btrack"><div class="bfill" style="width:2.6%"></div></div><div class="bval">6<small>/month</small></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What people actually type</h2>
+    <p class="section-sub">One phrase family carries almost all the demand. Google counts each variation separately — we merged them so the same search isn't counted 16 times.</p>
+    <div class="card">
+      <div class="bigkw"><span class="kw">"car wash near me"</span><span class="v">≈182 searches/mo</span></div>
+      <div class="chips">
+        <span class="chip">auto wash near me</span><span class="chip">car wash</span><span class="chip">best car wash near me</span>
+        <span class="chip">closest car wash</span><span class="chip">car wash in my area</span><span class="chip">wash my car</span>
+        <span class="chip">+ 10 more variations</span>
+      </div>
+      <div class="tailnote">Everything else is a long tail of 400+ phrases at roughly 2–3 searches a month each — "self service car wash", "coin car wash near me", "manual car wash", "truck self wash near me". Tiny on their own, but they're the searches from people looking for <b>exactly this kind of wash</b>, and clicks on them will cost next to nothing.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Potential for ad success</h2>
+    <p class="section-sub">A transparent score — four factors, each explained, so you can see exactly why the number is what it is.</p>
+    <div class="card">
+      <div class="scorecard">
+        <div class="ring">
+          <svg width="140" height="140" viewBox="0 0 140 140" role="img" aria-label="Ad success score 57 out of 100">
+            <circle cx="70" cy="70" r="60" fill="none" stroke="var(--track)" stroke-width="12"/>
+            <circle cx="70" cy="70" r="60" fill="none" stroke="var(--amber)" stroke-width="12" stroke-linecap="round"
+              stroke-dasharray="214.9 377" />
+          </svg>
+          <div class="num"><b>57</b><span>of 100</span></div>
+        </div>
+        <div>
+          <div class="verdict">⚠ Fair — proceed carefully, and small</div>
+          <div class="factors">
+            <div class="frow"><span class="fn">Search demand</span><div class="ftrack"><div class="ffill" style="width:27%"></div></div><span class="fv">8/30</span>
+              <span class="fwhy">Only ≈290 real searches a month region-wide — a thin market.</span></div>
+            <div class="frow"><span class="fn">Buyer intent</span><div class="ftrack"><div class="ffill" style="width:100%"></div></div><span class="fv">25/25</span>
+              <span class="fwhy">85% of searches are "near me" — people who want a wash right now, not researchers.</span></div>
+            <div class="frow"><span class="fn">Cost vs. ticket</span><div class="ftrack"><div class="ffill" style="width:16%"></div></div><span class="fv">4/25</span>
+              <span class="fwhy">≈$3.33 in ads per visit vs. an $8 ticket — thin per-visit, but a new regular pays back every month after.</span></div>
+            <div class="frow"><span class="fn">Competition</span><div class="ftrack"><div class="ffill" style="width:98%"></div></div><span class="fv">20/20</span>
+              <span class="fwhy">Almost nobody bids on these phrases — clicks should stay around $1 or less.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <table class="tiers">
+        <tr><th>Monthly budget</th><th>Spend that works</th><th>Clicks</th><th>Est. visits</th><th>Est. revenue</th></tr>
+        <tr><td><b>$100</b></td><td>$100</td><td>≈100</td><td>≈30</td><td>≈$240</td></tr>
+        <tr><td><b>$200</b></td><td>$116 <span class="cap">capped</span></td><td>≈116</td><td>≈35</td><td>≈$280</td></tr>
+        <tr><td><b>$400</b></td><td>$116 <span class="cap">capped</span></td><td>≈116</td><td>≈35</td><td>≈$280</td></tr>
+      </table>
+      <p class="assume"><b>Capped</b> means the region literally runs out of searches — past ≈$116/month there are no more relevant clicks to buy, no matter the budget. Assumptions: $1.00 per click (Google shows almost no bid data here; the one rated phrase ran $0.01–$1.54), 30% of clickers visit, $8 average ticket (your own credit-card average). Revenue shown is first visits only — every new regular is worth ≈$8/month ongoing, which is where the real payback is.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What this means</h2>
+    <div class="takes">
+      <div class="take"><b>Google demand is real but small — and it's regional.</b> ≈290 searches a month covers the whole Paris area; most of those people are 20+ miles away with washes of their own. Google alone will not fill the bays.</div>
+      <div class="take"><b>A small Google campaign is still worth running.</b> Nobody else is bidding, clicks cost about $1, and 85% of searchers want a wash right now. $100–150/month tightly targeted around Honey Grove captures essentially everything worth buying. Do not spend more than that here.</div>
+      <div class="take"><b>The bigger Google win is free: the Business Profile.</b> Those ≈290 monthly searches mostly land on Google Maps. Finish the Buzz &amp; Buff rename, load photos, build on the 5-star start, and track "directions" taps. That's where "car wash near me" actually gets decided.</div>
+      <div class="take"><b>Put the rest of the budget into Facebook.</b> The people who need to hear "under new management, $3 wash, credit cards accepted" are locals who never search Google — you reach them on Facebook. The ad I'd run first is the video we talked about: you walking up to the wash with a car getting washed behind you. I'll write the script — you just film it on your phone. That one video works as the paid ad <i>and</i> the pinned post, and it does the one job that matters most: telling the town this isn't the old run-down wash anymore.</div>
+      <div class="take"><b>Wait for the new sign before turning anything on.</b> Ads that say Buzz &amp; Buff pointing at a wash labeled Main Street break trust. Rebrand first, advertise second.</div>
+    </div>
+  </section>
+
+  
+  <section>
+    <h2>What about pricing?</h2>
+    <div class="card" style="font-size:14.5px;color:var(--ink2);">No quote on this page yet — on purpose. The right move is to finish the Buzz &amp; Buff rename and the new sign first, then size the budget together once we know what you want to put behind it. When you're ready, call me and we'll set it up properly.</div>
+  </section>
+
+<p class="foot"><b>How we corrected the numbers.</b> Google's raw export claimed far more search volume than actually exists, so every figure above went through four honesty passes: <b>(1)</b> we removed 404 phrases that don't apply — competitor brand names (the biggest, a chain 210 searches/mo), automatic and touchless washes, detailing services, pressure-washer products, and "buy a car wash business" searches; <b>(2)</b> phrases Google reports at "10 searches/month" are rounded up — we count each as 3; <b>(3)</b> Google counts the same search under many similar phrases, so we merged 19 duplicate groups (e.g. "car wash near me" was being counted 16 ways); <b>(4)</b> a further 30% discount on the total, because Google's own documentation says volumes overlap and independent studies find Keyword Planner overestimates. No number here double-counts, and nothing is inflated to make ads look better than they are.</p>
+
+</div>
+
+</body>
+</html>
