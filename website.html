@@ -67,12 +67,11 @@ ul.inc li::before{content:"✓";position:absolute;left:0;color:var(--good);font-
 .why .card{padding:14px 16px;}
 .why .t{font-weight:700;font-size:13.5px;margin-bottom:3px;}
 .why .d{font-size:13.5px;color:var(--ink2);}
-.dogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;}
-.docard{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;}
-.docard .ic{flex:none;width:38px;height:38px;border-radius:12px;background:var(--accent-soft);
-  display:flex;align-items:center;justify-content:center;font-size:17px;}
-.docard .t{font-family:"Schibsted Grotesk",sans-serif;font-weight:800;font-size:16.5px;}
-.docard .d{font-size:13.5px;color:var(--ink2);margin-top:4px;}
+.dolist{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;}
+.dolist li{display:flex;gap:12px;align-items:baseline;padding:11px 0;font-size:15px;color:var(--ink2);}
+.dolist li + li{border-top:1px solid var(--line);}
+.dolist .ic{flex:none;font-size:16px;}
+.dolist b{color:var(--ink);}
 @media (max-width:560px){ .pricegrid{grid-template-columns:1fr;} }
 @media (prefers-reduced-motion: reduce){ *{transition:none!important;animation:none!important;} }
 </style>
@@ -128,18 +127,20 @@ ul.inc li::before{content:"✓";position:absolute;left:0;color:var(--good);font-
   <section>
     <h2>What we actually do when we build your website</h2>
     <p class="section-sub">More than a pretty design — the technical foundation is handled so you never have to think about it.</p>
-    <div class="dogrid">
-      <div class="docard"><div class="ic">🗺️</div><div><div class="t">Sitemap creation &amp; submission</div><div class="d">So Google can find and crawl every page.</div></div></div>
-      <div class="docard"><div class="ic">🔍</div><div><div class="t">Local keyword research</div><div class="d">We match your pages to what people in your area are actually searching for.</div></div></div>
-      <div class="docard"><div class="ic">🏷️</div><div><div class="t">SEO meta data setup</div><div class="d">Custom titles &amp; descriptions so your business stands out in search results.</div></div></div>
-      <div class="docard"><div class="ic">📍</div><div><div class="t">Google indexing</div><div class="d">We make sure your site shows up on Google (not buried or invisible) by submitting the sitemap and sending the pages to Google for indexing.</div></div></div>
-      <div class="docard"><div class="ic">⭐</div><div><div class="t">Favicon setup</div><div class="d">That little logo icon in the browser tab, for a polished, branded look.</div></div></div>
-      <div class="docard"><div class="ic">📱</div><div><div class="t">Mobile-friendly design</div><div class="d">Looks perfect on phones, tablets &amp; desktops.</div></div></div>
-      <div class="docard"><div class="ic">⚡</div><div><div class="t">Speed optimization</div><div class="d">Fast-loading pages that don't make visitors bounce.</div></div></div>
-      <div class="docard"><div class="ic">🔒</div><div><div class="t">SSL / secure site</div><div class="d">Security technology that encrypts the connection between a web browser and a website.</div></div></div>
-      <div class="docard"><div class="ic">🔗</div><div><div class="t">Social sharing previews</div><div class="d">Clean image &amp; text when your site gets shared on Facebook.</div></div></div>
-      <div class="docard"><div class="ic">🗂️</div><div><div class="t">Clean page structure &amp; headings</div><div class="d">Organized so both people and Google understand it.</div></div></div>
-      <div class="docard"><div class="ic">📞</div><div><div class="t">Click-to-call &amp; contact forms</div><div class="d">Making it easy for customers to reach you, with form submissions going straight to your inbox.</div></div></div>
+    <div class="card">
+      <ul class="dolist">
+        <li><span class="ic">🗺️</span><span><b>Sitemap creation &amp; submission</b> — so Google can find and crawl every page</span></li>
+        <li><span class="ic">🔍</span><span><b>Local keyword research</b> — we match your pages to what people in your area are actually searching for</span></li>
+        <li><span class="ic">🏷️</span><span><b>SEO meta data setup</b> — custom titles &amp; descriptions so your business stands out in search results</span></li>
+        <li><span class="ic">📍</span><span><b>Google indexing</b> — we make sure your site shows up on Google (not buried or invisible) by submitting the sitemap and sending the pages to Google for indexing</span></li>
+        <li><span class="ic">⭐</span><span><b>Favicon setup</b> — that little logo icon in the browser tab, for a polished, branded look</span></li>
+        <li><span class="ic">📱</span><span><b>Mobile-friendly design</b> — looks perfect on phones, tablets &amp; desktops</span></li>
+        <li><span class="ic">⚡</span><span><b>Speed optimization</b> — fast-loading pages that don't make visitors bounce</span></li>
+        <li><span class="ic">🔒</span><span><b>SSL / secure site</b> — encrypts the connection between a web browser and a website</span></li>
+        <li><span class="ic">🔗</span><span><b>Social sharing previews</b> — clean image &amp; text when your site gets shared on Facebook</span></li>
+        <li><span class="ic">🗂️</span><span><b>Clean page structure &amp; headings</b> — organized so both people and Google understand it</span></li>
+        <li><span class="ic">📞</span><span><b>Click-to-call &amp; contact forms</b> — making it easy for customers to reach you, with form submissions going straight to your inbox</span></li>
+      </ul>
     </div>
   </section>
 
